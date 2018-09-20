@@ -1,11 +1,3 @@
-#Second implementation of TileTraveller.
-#The first implementation was "easier" to code since you just basically hard coded everything
-#which resulted in a large unattractive block of code.
-#With the modifed version some of the reacurring things you need to do throughout the project have been made into functions.
-#Most notably the can_travel function which replaced 15 prints with a single function
-#The first implementation is probably more readable for beginners but the second one is alot better for
-#multiple reasons like scalability and ensures consistency in the code.
-
 x,y=1,1
 Play = True
 inv_dir = "Not a valid direction"
@@ -30,14 +22,11 @@ def can_travel(n, e, s, w):
         s += " or " + dirs[i]
     return s
 
-
-#Prompts user for a direction and returns it
 def get_move():
     u = input("Direction: ")
     u = u.lower()
     return u
 
-#Main game loop. Plays while True. Only False case is when user enteres x,y cords 3,1
 while Play:
     if x == 1 and y == 1:
         print(can_travel(1,0,0,0))
