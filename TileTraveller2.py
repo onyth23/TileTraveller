@@ -6,6 +6,10 @@
 #The first implementation is probably more readable for beginners but the second one is alot better for
 #multiple reasons like scalability and ensures consistency in the code.
 
+#Github
+
+#https://github.com/onyth23/TileTraveller
+
 x,y=1,1
 Play = True
 inv_dir = "Not a valid direction"

@@ -1,9 +1,10 @@
 x,y=1,1
 Play = True
 
+print("You can travel: (N)orth.")
+
 while Play:
     if x == 1 and y == 1:
-        print("You can travel: (N)orth.")
         move = input("Direction: ")
         move = move.lower()
         if move == "n":
